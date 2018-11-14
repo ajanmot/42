@@ -1,0 +1,3 @@
+Amazon
+
+Pour cela, je passe tout d'abord par la commande dig slash16.org qui me donne les differentes adresses IP de ce DNS. Par la suite j'utilise la commande whois d'une des adresses ip de type A. Par la suite on peut remarquer que la comande me decrit une reponse de la part d'Amazon.

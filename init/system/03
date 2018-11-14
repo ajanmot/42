@@ -1,0 +1,1 @@
+Pour le modifier de façon permanante il faut modifier le fichier /etc/hostname ainsi que les occurences dans le fichier /etc/hosts

@@ -1,0 +1,4 @@
+Pour repondre a cette question je me suis servis de la commande traceroute -a slash16.org. Deux elements me permettent d'etayer ma reponse.
+	- On peut remarquer que les groupes AS sont les meme pour dc3 et les deux elements suivant donc il appartienent au meme reseau.
+	- La limite se trouve donc au niveau du NAT-1 qui est l'outil repondant a la question.
+

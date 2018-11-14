@@ -1,0 +1,5 @@
+#!/bin/bash
+md5sum /etc/crontab > crontabcheck
+chmod a-w crontabcheck
+
+echo "0 0 * * * md5sum /etc/crontab > /tmp/crontabsum && if [ \`diff /etc/crontabcheck /tmp/crontabsum | wc -l\` != \"0\" ]; then mail -s ‘Crontab a ete modifie’ root; fi && rm -rf /tmp/crontabcheck && md5sum /etc/crontab > crontabcheck" >> /etc/crontab`
