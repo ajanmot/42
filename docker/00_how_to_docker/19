@@ -1,0 +1,14 @@
+#Start Abathur container
+docker run -it --name Abathur --restart on-failure -p 3000:3000 \
+--mount type=bind,source=/root,target=/home/42/ \
+python:2-slim
+
+#Set py
+exit()
+
+#Set up Flask
+docker start Abathur
+docker exec -ti Abathur /bin/bash
+pip install Flask
+echo -e "from flask import Flask\napp = Flask(__name__)\n@app.route(\"/\")\ndef hello():\n\treturn \"<h1>Hello World<h1>\"" > hello.py
+FLASK_APP=hello.py flask run --host=0.0.0.0 -p 3000

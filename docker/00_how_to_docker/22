@@ -1,0 +1,2 @@
+docker swarm join-token worker
+#Pour definir Aiur en tant que worker du swarm local : eval "$(docker-machine env Aiur)" et taper le retour de commande precedent
